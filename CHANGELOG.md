@@ -1,3 +1,6 @@
+## 0.3.0
+* Added snippets for tagger script variables
+
 ## 0.2.0
 * Added standard tagger script function snippets
 

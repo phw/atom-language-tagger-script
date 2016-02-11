@@ -128,3 +128,215 @@
   '$delprefix(text,*prefixes="a","the")':
     'prefix': 'delprefix'
     'body': '$delprefix(${1:text})$2'
+
+  # Variables
+  '%album%':
+    'prefix': 'album'
+    'body': '%album%'
+  '%artist%':
+    'prefix': 'artist'
+    'body': '%artist%'
+  '%title%':
+    'prefix': 'title'
+    'body': '%title%'
+  '%date%':
+    'prefix': 'date'
+    'body': '%date%'
+  '%originaldate%':
+    'prefix': 'originaldate'
+    'body': '%originaldate%'
+  '%originalyear%':
+    'prefix': 'originalyear'
+    'body': '%originalyear%'
+  '%albumartist%':
+    'prefix': 'albumartist'
+    'body': '%albumartist%'
+  '%tracknumber%':
+    'prefix': 'tracknumber'
+    'body': '%tracknumber%'
+  '%totaltracks%':
+    'prefix': 'totaltracks'
+    'body': '%totaltracks%'
+  '%discnumber%':
+    'prefix': 'discnumber'
+    'body': '%discnumber%'
+  '%totaldiscs%':
+    'prefix': 'totaldiscs'
+    'body': '%totaldiscs%'
+  '%albumartistsort%':
+    'prefix': 'albumartistsort'
+    'body': '%albumartistsort%'
+  '%artistsort%':
+    'prefix': 'artistsort'
+    'body': '%artistsort%'
+  '%titlesort%':
+    'prefix': 'titlesort'
+    'body': '%titlesort%'
+  '%albumsort%':
+    'prefix': 'albumsort'
+    'body': '%albumsort%'
+  '%composersort%':
+    'prefix': 'composersort'
+    'body': '%composersort%'
+  '%asin%':
+    'prefix': 'asin'
+    'body': '%asin%'
+  '%grouping%':
+    'prefix': 'grouping'
+    'body': '%grouping%'
+  '%isrc%':
+    'prefix': 'isrc'
+    'body': '%isrc%'
+  '%mood%':
+    'prefix': 'mood'
+    'body': '%mood%'
+  '%bpm%':
+    'prefix': 'bpm'
+    'body': '%bpm%'
+  '%key%':
+    'prefix': 'key'
+    'body': '%key%'
+  '%copyright%':
+    'prefix': 'copyright'
+    'body': '%copyright%'
+  '%license%':
+    'prefix': 'license'
+    'body': '%license%'
+  '%composer%':
+    'prefix': 'composer'
+    'body': '%composer%'
+  '%writer%':
+    'prefix': 'writer'
+    'body': '%writer%'
+  '%conductor%':
+    'prefix': 'conductor'
+    'body': '%conductor%'
+  '%lyricist%':
+    'prefix': 'lyricist'
+    'body': '%lyricist%'
+  '%arranger%':
+    'prefix': 'arranger'
+    'body': '%arranger%'
+  '%producer%':
+    'prefix': 'producer'
+    'body': '%producer%'
+  '%engineer%':
+    'prefix': 'engineer'
+    'body': '%engineer%'
+  '%subtitle%':
+    'prefix': 'subtitle'
+    'body': '%subtitle%'
+  '%discsubtitle%':
+    'prefix': 'discsubtitle'
+    'body': '%discsubtitle%'
+  '%remixer%':
+    'prefix': 'remixer'
+    'body': '%remixer%'
+  '%musicbrainz_recordingid%':
+    'prefix': 'musicbrainz_recordingid'
+    'body': '%musicbrainz_recordingid%'
+  '%musicbrainz_trackid%':
+    'prefix': 'musicbrainz_trackid'
+    'body': '%musicbrainz_trackid%'
+  '%musicbrainz_albumid%':
+    'prefix': 'musicbrainz_albumid'
+    'body': '%musicbrainz_albumid%'
+  '%musicbrainz_artistid%':
+    'prefix': 'musicbrainz_artistid'
+    'body': '%musicbrainz_artistid%'
+  '%musicbrainz_albumartistid%':
+    'prefix': 'musicbrainz_albumartistid'
+    'body': '%musicbrainz_albumartistid%'
+  '%musicbrainz_workid%':
+    'prefix': 'musicbrainz_workid'
+    'body': '%musicbrainz_workid%'
+  '%musicbrainz_releasegroupid%':
+    'prefix': 'musicbrainz_releasegroupid'
+    'body': '%musicbrainz_releasegroupid%'
+  '%musicbrainz_discid%':
+    'prefix': 'musicbrainz_discid'
+    'body': '%musicbrainz_discid%'
+  '%musicip_puid%':
+    'prefix': 'musicip_puid'
+    'body': '%musicip_puid%'
+  '%musicip_fingerprint%':
+    'prefix': 'musicip_fingerprint'
+    'body': '%musicip_fingerprint%'
+  '%acoustid_id%':
+    'prefix': 'acoustid_id'
+    'body': '%acoustid_id%'
+  '%acoustid_fingerprint%':
+    'prefix': 'acoustid_fingerprint'
+    'body': '%acoustid_fingerprint%'
+  '%discid%':
+    'prefix': 'discid'
+    'body': '%discid%'
+  '%website%':
+    'prefix': 'website'
+    'body': '%website%'
+  '%compilation%':
+    'prefix': 'compilation'
+    'body': '%compilation%'
+  '%comment:%':
+    'prefix': 'comment:'
+    'body': '%comment:%'
+  '%genre%':
+    'prefix': 'genre'
+    'body': '%genre%'
+  '%encodedby%':
+    'prefix': 'encodedby'
+    'body': '%encodedby%'
+  '%encodersettings%':
+    'prefix': 'encodersettings'
+    'body': '%encodersettings%'
+  '%performer:%':
+    'prefix': 'performer:'
+    'body': '%performer:%'
+  '%releasetype%':
+    'prefix': 'releasetype'
+    'body': '%releasetype%'
+  '%releasestatus%':
+    'prefix': 'releasestatus'
+    'body': '%releasestatus%'
+  '%releasecountry%':
+    'prefix': 'releasecountry'
+    'body': '%releasecountry%'
+  '%label%':
+    'prefix': 'label'
+    'body': '%label%'
+  '%barcode%':
+    'prefix': 'barcode'
+    'body': '%barcode%'
+  '%catalognumber%':
+    'prefix': 'catalognumber'
+    'body': '%catalognumber%'
+  '%djmixer%':
+    'prefix': 'djmixer'
+    'body': '%djmixer%'
+  '%media%':
+    'prefix': 'media'
+    'body': '%media%'
+  '%lyrics%':
+    'prefix': 'lyrics'
+    'body': '%lyrics%'
+  '%mixer%':
+    'prefix': 'mixer'
+    'body': '%mixer%'
+  '%language%':
+    'prefix': 'language'
+    'body': '%language%'
+  '%script%':
+    'prefix': 'script'
+    'body': '%script%'
+  '%_length%':
+    'prefix': 'length'
+    'body': '%_length%'
+  '%_rating%':
+    'prefix': 'rating'
+    'body': '%_rating%'
+  '%artists%':
+    'prefix': 'artists'
+    'body': '%artists%'
+  '%work%':
+    'prefix': 'work'
+    'body': '%work%'
