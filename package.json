@@ -1,14 +1,12 @@
 {
   "name": "language-tagger-script",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "MusicBrainz Picard Tagger Script syntax highlighting",
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": "https://github.com/phw/atom-language-tagger-script",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
