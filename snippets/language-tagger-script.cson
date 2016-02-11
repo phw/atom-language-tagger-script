@@ -1,4 +1,5 @@
 '.source.tagger_script':
+  # Functions
   'Comment':
     'prefix': 'noop'
     'body': '$noop($1)$2'
@@ -7,7 +8,7 @@
     'body': '$if(${1:if},${2:then},${3:else})$4'
   '$if2(a1,a2,a3,...)':
     'prefix': 'if2'
-    'body': '$if($1)$2'
+    'body': '$if2($1,$2)'
   '$lower(text)':
     'prefix': 'lower'
     'body': '$lower(${1:text})$2'
