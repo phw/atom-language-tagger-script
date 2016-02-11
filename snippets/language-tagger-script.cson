@@ -5,10 +5,10 @@
     'body': '$noop($1)$2'
   '$if(if,then,else)':
     'prefix': 'if'
-    'body': '$if(${1:if},${2:then},${3:else})$4'
-  '$if2(a1,a2,a3,...)':
+    'body': '$if(${1:if,then,else})$2'
+  '$if2(a1,a2,a3,…)':
     'prefix': 'if2'
-    'body': '$if2($1,$2)'
+    'body': '$if2($1)$2'
   '$lower(text)':
     'prefix': 'lower'
     'body': '$lower(${1:text})$2'
@@ -17,94 +17,94 @@
     'body': '$upper(${1:text})$2'
   '$left(text,num)':
     'prefix': 'left'
-    'body': '$left(${1:text},${2:num})$3'
+    'body': '$left(${1:text,num})$2'
   '$right(text,num)':
     'prefix': 'right'
-    'body': '$right(${1:text},${2:num})$3'
+    'body': '$right(${1:text,num})$2'
   '$matchedtracks()':
     'prefix': 'matchedtracks'
     'body': '$matchedtracks()$1'
   '$num(num,len)':
     'prefix': 'num'
-    'body': '$num(${1:num},${2:len})$3'
+    'body': '$num(${1:num},${2:2})$3'
   '$replace(text,search,replace)':
     'prefix': 'replace'
-    'body': '$replace(${1:text},${2:search},${3:replace})$4'
+    'body': '$replace(${1:text,search,replace})$2'
   '$rsearch(text,pattern)':
     'prefix': 'rsearch'
-    'body': '$rsearch(${1:text},${2:pattern})$3'
+    'body': '$rsearch(${1:text,pattern})$2'
   '$rreplace(text,pattern,replace)':
     'prefix': 'rreplace'
-    'body': '$rreplace(${1:text},${2:pattern},${3:replace})$4'
+    'body': '$rreplace(${1:text,pattern,replace})$2'
   '$in(x,y)':
     'prefix': 'in'
-    'body': '$in(${1:x},${2:y})$3'
+    'body': '$in(${1:x,y})$2'
   '$inmulti(x,y)':
     'prefix': 'inmulti'
-    'body': '$inmulti(${1:x},${2:y})$3'
+    'body': '$inmulti(${1:x,y})$2'
   '$unset(name)':
     'prefix': 'unset'
     'body': '$unset(${1:name})$2'
   '$set(name,value)':
     'prefix': 'set'
-    'body': '$set(${1:name},${2:value})$3'
+    'body': '$set(${1:name,value})$2'
   '$setmulti(name,value,separator="; ")':
     'prefix': 'setmulti'
-    'body': '$setmulti(${1:name},${2:value})$3'
+    'body': '$setmulti(${1:name,value,separator="; "})$2'
   '$get(name)':
     'prefix': 'get'
     'body': '$get(${1:name})$2'
   '$copy(new,old)':
     'prefix': 'copy'
-    'body': '$copy(${1:new},${2:old})$3'
+    'body': '$copy(${1:new,old})$2'
   '$copymerge(new,old)':
     'prefix': 'copymerge'
-    'body': '$copymerge(${1:new},${2:old})$3'
+    'body': '$copymerge(${1:new,old})$2'
   '$trim(text[,char])':
     'prefix': 'trim'
     'body': '$trim(${1:text})$2'
   '$add(x,y)':
     'prefix': 'add'
-    'body': '$add(${1:x},${2:y})$3'
+    'body': '$add(${1:x,y})$2'
   '$sub(x,y)':
     'prefix': 'sub'
-    'body': '$sub(${1:x},${2:y})$3'
+    'body': '$sub(${1:x,y})$2'
   '$div(x,y)':
     'prefix': 'div'
-    'body': '$div(${1:x},${2:y})$3'
+    'body': '$div(${1:x,y})$2'
   '$mod(x,y)':
     'prefix': 'mod'
-    'body': '$mod(${1:x},${2:y})$3'
+    'body': '$mod(${1:x,y})$2'
   '$mul(x,y)':
     'prefix': 'mul'
-    'body': '$mul(${1:x},${2:y})$3'
+    'body': '$mul(${1:x,y})$2'
   '$or(x,y)':
     'prefix': 'or'
-    'body': '$or(${1:x},${2:y})$3'
+    'body': '$or(${1:x,y})$2'
   '$and(x,y)':
     'prefix': 'and'
-    'body': '$and(${1:x},${2:y})$3'
+    'body': '$and(${1:x,y})$2'
   '$not(x)':
     'prefix': 'not'
     'body': '$not(${1:x})$2'
   '$eq(x,y)':
     'prefix': 'eq'
-    'body': '$eq(${1:x},${2:y})$3'
+    'body': '$eq(${1:x,y})$2'
   '$ne(x,y)':
     'prefix': 'ne'
-    'body': '$ne(${1:x},${2:y})$3'
+    'body': '$ne(${1:x,y})$2'
   '$lt(x,y)':
     'prefix': 'lt'
-    'body': '$lt(${1:x},${2:y})$3'
+    'body': '$lt(${1:x,y})$2'
   '$lte(x,y)':
     'prefix': 'lte'
-    'body': '$lte(${1:x},${2:y})$3'
+    'body': '$lte(${1:x,y})$2'
   '$gt(x,y)':
     'prefix': 'gt'
-    'body': '$gt(${1:x},${2:y})$3'
+    'body': '$gt(${1:x,y})$2'
   '$gte(x,y)':
     'prefix': 'gte'
-    'body': '$gte(${1:x},${2:y})$3'
+    'body': '$gte(${1:x,y})$2'
   '$len(text)':
     'prefix': 'len'
     'body': '$len(${1:text})$2'
@@ -113,22 +113,22 @@
     'body': '$performer()$2'
   '$firstalphachar(text,nonalpha="#")':
     'prefix': 'firstalphachar'
-    'body': '$firstalphachar(${1:text})$2'
+    'body': '$firstalphachar(${1:text,nonalpha="#"})$2'
   '$initials(text)':
     'prefix': 'initials'
     'body': '$initials(${1:text})$2'
   '$truncate(text,length)':
     'prefix': 'truncate'
-    'body': '$truncate(${1:text},${2:length})$3'
+    'body': '$truncate(${1:text,length})$2'
   '$firstwords(text,length)':
     'prefix': 'firstwords'
-    'body': '$firstwords(${1:text},${2:length})$3'
+    'body': '$firstwords(${1:text,length})$2'
   '$swapprefix(text,*prefixes="a","the")':
     'prefix': 'swapprefix'
-    'body': '$swapprefix(${1:text})$2'
+    'body': '$swapprefix(${1:text,*prefixes="a","the"})$2'
   '$delprefix(text,*prefixes="a","the")':
     'prefix': 'delprefix'
-    'body': '$delprefix(${1:text})$2'
+    'body': '$delprefix(${1:text,*prefixes="a","the"})$2'
 
   # Variables
   '%album%':

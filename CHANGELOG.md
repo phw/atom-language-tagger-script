@@ -1,3 +1,6 @@
+# 0.4.0
+* Snippets: No separate tab stops for parameters.
+
 ## 0.3.0
 * Added snippets for tagger script variables
 * Fixed `if2` snippet definition
