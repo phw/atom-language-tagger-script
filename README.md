@@ -3,7 +3,7 @@
 
 Adds syntax highlighting and code snippets for MusicBrainz Picard Tagger Script.
 
-![Tagger Script language preview](https://raw.githubusercontent.com/phw/atom-language-tagger-script/master/language-tagger-script-preview)
+![Tagger Script language preview](https://raw.githubusercontent.com/phw/atom-language-tagger-script/master/language-tagger-script-preview.gif)
 
 ## Code snippets
 This package provides code snippets for all [default Tagger Script functions](http://picard.musicbrainz.org/docs/scripting/#functions) and
