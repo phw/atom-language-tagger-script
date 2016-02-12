@@ -130,7 +130,7 @@
     'prefix': 'delprefix'
     'body': '$delprefix(${1:text,*prefixes="a","the"})$2'
 
-  # Variables
+  # Metadata variables
   '%album%':
     'prefix': 'album'
     'body': '%album%'
@@ -280,7 +280,7 @@
     'body': '%compilation%'
   '%comment:%':
     'prefix': 'comment:'
-    'body': '%comment:%'
+    'body': '%comment:$1%$2'
   '%genre%':
     'prefix': 'genre'
     'body': '%genre%'
@@ -292,7 +292,7 @@
     'body': '%encodersettings%'
   '%performer:%':
     'prefix': 'performer:'
-    'body': '%performer:%'
+    'body': '%performer:$1%$2'
   '%releasetype%':
     'prefix': 'releasetype'
     'body': '%releasetype%'
@@ -329,15 +329,74 @@
   '%script%':
     'prefix': 'script'
     'body': '%script%'
-  '%_length%':
-    'prefix': 'length'
-    'body': '%_length%'
-  '%_rating%':
-    'prefix': 'rating'
-    'body': '%_rating%'
   '%artists%':
     'prefix': 'artists'
     'body': '%artists%'
   '%work%':
     'prefix': 'work'
     'body': '%work%'
+
+  # Technical variables
+  '%_albumtracknumber%':
+    'prefix': '_albumtracknumber'
+    'body': '%_albumtracknumber%'
+  '%_totalalbumtracks%':
+    'prefix': '_totalalbumtracks'
+    'body': '%_totalalbumtracks%'
+  '%_releasecomment%':
+    'prefix': '_releasecomment'
+    'body': '%_releasecomment%'
+  '%_releaselanguage%':
+    'prefix': '_releaselanguage'
+    'body': '%_releaselanguage%'
+  '%_releasegroup%':
+    'prefix': '_releasegroup'
+    'body': '%_releasegroup%'
+  '%_releasegroupcomment%':
+    'prefix': '_releasegroupcomment'
+    'body': '%_releasegroupcomment%'
+  '%_primaryreleasetype%':
+    'prefix': '_primaryreleasetype'
+    'body': '%_primaryreleasetype%'
+  '%_secondaryreleasetype%':
+    'prefix': '_secondaryreleasetype'
+    'body': '%_secondaryreleasetype%'
+  '%_length%':
+    'prefix': '_length'
+    'body': '%_length%'
+  '%_rating%':
+    'prefix': '_rating'
+    'body': '%_rating%'
+  '%_dirname%':
+    'prefix': '_dirname'
+    'body': '%_dirname%'
+  '%_filename%':
+    'prefix': '_filename'
+    'body': '%_filename%'
+  '%_extension%':
+    'prefix': '_extension'
+    'body': '%_extension%'
+  '%_format%':
+    'prefix': '_format'
+    'body': '%_format%'
+  '%_bitrate%':
+    'prefix': '_bitrate'
+    'body': '%_bitrate%'
+  '%_channels%':
+    'prefix': '_channels'
+    'body': '%_channels%'
+  '%_sample_rate%':
+    'prefix': '_sample_rate'
+    'body': '%_sample_rate%'
+  '%_bits_per_sample%':
+    'prefix': '_bits_per_sample'
+    'body': '%_bits_per_sample%'
+  '%_multiartist%':
+    'prefix': '_multiartist'
+    'body': '%_multiartist%'
+  '%_recordingtitle%':
+    'prefix': '_recordingtitle'
+    'body': '%_recordingtitle%'
+  '%_recordingcomment%':
+    'prefix': '_recordingcomment'
+    'body': '%_recordingcomment%'

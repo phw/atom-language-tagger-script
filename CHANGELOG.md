@@ -1,5 +1,6 @@
 # 0.4.0
 * Snippets: No separate tab stops for parameters.
+* Snippets: Added all variables supported by Picard
 
 ## 0.3.0
 * Added snippets for tagger script variables
