@@ -105,6 +105,18 @@
   '$gte(x,y)':
     'prefix': 'gte'
     'body': '$gte(${1:x,y})$2'
+  '$eq_any(x,a1,a2,…)':
+    'prefix': 'eq_any'
+    'body': '$eq_any(${1:x,a1,a2,…})$2'
+  '$eq_all(x,a1,a2,…)':
+    'prefix': 'eq_all'
+    'body': '$eq_all(${1:x,a1,a2,…})$2'
+  '$ne_any(x,a1,a2,…)':
+    'prefix': 'ne_any'
+    'body': '$ne_any(${1:x,a1,a2,…})$2'
+  '$ne_all(x,a1,a2,…)':
+    'prefix': 'ne_all'
+    'body': '$ne_all(${1:x,a1,a2,…})$2'
   '$len(text)':
     'prefix': 'len'
     'body': '$len(${1:text})$2'
@@ -129,6 +141,12 @@
   '$delprefix(text,*prefixes="a","the")':
     'prefix': 'delprefix'
     'body': '$delprefix(${1:text,*prefixes="a","the"})$2'
+  '$startswith(text,prefix)':
+    'prefix': 'startswith'
+    'body': '$startswith(${1:text,prefix})$2'
+  '$endswith(text,suffix)':
+    'prefix': 'endswith'
+    'body': '$endswith(${1:text,prefix})$2'
 
   # Metadata variables
   '%album%':
@@ -400,3 +418,15 @@
   '%_recordingcomment%':
     'prefix': '_recordingcomment'
     'body': '%_recordingcomment%'
+  '%_datatrack%':
+    'prefix': '_datatrack'
+    'body': '%_datatrack%'
+  '%_pregap%':
+    'prefix': '_pregap'
+    'body': '%_pregap%'
+  '%_silence%':
+    'prefix': '_silence'
+    'body': '%_silence%'
+  '%_video%':
+    'prefix': '_video'
+    'body': '%_video%'
