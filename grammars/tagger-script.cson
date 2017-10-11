@@ -1,6 +1,6 @@
 'name': 'Tagger Script',
 'scopeName': 'source.tagger_script'
-'fileTypes': [ 'taggerscript' ]
+'fileTypes': [ 'taggerscript', 'pts' ]
 'patterns': [
   {
     'comment': 'Comments ($noop(...))'

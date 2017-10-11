@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.7.0
+* Grammar:Also support `.pts` file extension
+
 ## 0.6.0
 *Snippets: Added missing variables
 
