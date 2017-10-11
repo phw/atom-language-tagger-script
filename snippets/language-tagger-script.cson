@@ -24,6 +24,9 @@
   '$matchedtracks()':
     'prefix': 'matchedtracks'
     'body': '$matchedtracks()$1'
+  '$is_complete()':
+    'prefix': 'is_complete'
+    'body': '$is_complete()$1'
   '$num(num,len)':
     'prefix': 'num'
     'body': '$num(${1:num},${2:2})$3'
@@ -60,6 +63,12 @@
   '$copymerge(new,old)':
     'prefix': 'copymerge'
     'body': '$copymerge(${1:new,old})$2'
+  '$pad(text,length,char)':
+    'prefix': 'pad'
+    'body': '$pad(${1:text,length,char})$2'
+  '$strip(text)':
+    'prefix': 'strip'
+    'body': '$strip(${1:text})$2'
   '$trim(text[,char])':
     'prefix': 'trim'
     'body': '$trim(${1:text})$2'
