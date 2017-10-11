@@ -439,3 +439,21 @@
   '%_video%':
     'prefix': '_video'
     'body': '%_video%'
+  '%_absolutetracknumber%':
+    'prefix': '_absolutetracknumber'
+    'body': '%_absolutetracknumber%'
+  '%_musicbrainz_tracknumber%':
+    'prefix': '_musicbrainz_tracknumber'
+    'body': '%_musicbrainz_tracknumber%'
+  '%_performance_attributes%':
+    'prefix': '_performance_attributes'
+    'body': '%_performance_attributes%'
+  '%_artists_sort%':
+    'prefix': '_artists_sort'
+    'body': '%_artists_sort%'
+  '%_albumartists%':
+    'prefix': '_albumartists'
+    'body': '%_albumartists%'
+  '%_albumartists_sort%':
+    'prefix': '_albumartists_sort'
+    'body': '%_albumartists_sort%'
