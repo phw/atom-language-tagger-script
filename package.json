@@ -1,6 +1,6 @@
 {
   "name": "language-tagger-script",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "MusicBrainz Picard Tagger Script syntax highlighting",
   "keywords": [
     "language",
