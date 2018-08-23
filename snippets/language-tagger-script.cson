@@ -379,7 +379,7 @@
     'body': '%show%'
   '%showsort%':
     'prefix': 'showsort'
-    'body': '%showsort%''
+    'body': '%showsort%'
 
   # Technical variables
   '%_albumtracknumber%':
