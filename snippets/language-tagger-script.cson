@@ -170,6 +170,12 @@
   '%date%':
     'prefix': 'date'
     'body': '%date%'
+  '%originalalbum%':
+    'prefix': 'originalalbum'
+    'body': '%originalalbum%'
+  '%originalartist%':
+    'prefix': 'originalartist'
+    'body': '%originalartist%'
   '%originaldate%':
     'prefix': 'originaldate'
     'body': '%originaldate%'
@@ -362,6 +368,18 @@
   '%work%':
     'prefix': 'work'
     'body': '%work%'
+  '%podcast%':
+    'prefix': 'podcast'
+    'body': '%podcast%'
+  '%podcasturl%':
+    'prefix': 'podcasturl'
+    'body': '%podcasturl%'
+  '%show%':
+    'prefix': 'show'
+    'body': '%show%'
+  '%showsort%':
+    'prefix': 'showsort'
+    'body': '%showsort%''
 
   # Technical variables
   '%_albumtracknumber%':
