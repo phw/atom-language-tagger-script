@@ -1,10 +1,14 @@
 # Changelog
 
+## 0.8.0
+* Snippets: Added missing variables `originalalbum`, `originalartist`,
+            `podcast`, `podcasturl`, `show`, `showsort`
+
 ## 0.7.0
 * Grammar:Also support `.pts` file extension
 
 ## 0.6.0
-*Snippets: Added missing variables
+* Snippets: Added missing variables
 
 ## 0.5.0
 * Snippets: Added new functions and variables from Picard 1.4 and other
