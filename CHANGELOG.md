@@ -1,11 +1,14 @@
 # Changelog
 
+## 0.8.1
+* Fixed syntax error
+
 ## 0.8.0
 * Snippets: Added missing variables `originalalbum`, `originalartist`,
             `podcast`, `podcasturl`, `show`, `showsort`
 
 ## 0.7.0
-* Grammar:Also support `.pts` file extension
+* Grammar: Also support `.pts` file extension
 
 ## 0.6.0
 * Snippets: Added missing variables
