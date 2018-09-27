@@ -45,15 +45,18 @@
   '$inmulti(x,y)':
     'prefix': 'inmulti'
     'body': '$inmulti(${1:x,y})$2'
-  '$unset(name)':
-    'prefix': 'unset'
-    'body': '$unset(${1:name})$2'
   '$set(name,value)':
     'prefix': 'set'
     'body': '$set(${1:name,value})$2'
   '$setmulti(name,value,separator="; ")':
     'prefix': 'setmulti'
     'body': '$setmulti(${1:name,value,separator="; "})$2'
+  '$unset(name)':
+    'prefix': 'unset'
+    'body': '$unset(${1:name})$2'
+  '$delete(name)':
+    'prefix': 'delete'
+    'body': '$delete(${1:name})$2'
   '$get(name)':
     'prefix': 'get'
     'body': '$get(${1:name})$2'
