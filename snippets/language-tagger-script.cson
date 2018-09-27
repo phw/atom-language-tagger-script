@@ -478,3 +478,14 @@
   '%_albumartists_sort%':
     'prefix': '_albumartists_sort'
     'body': '%_albumartists_sort%'
+
+  # Coverart specific variables
+  '%coverart_maintype%':
+    'prefix': 'coverart_maintype'
+    'body': '%coverart_maintype%'
+  '%coverart_types%':
+    'prefix': 'coverart_types'
+    'body': '%coverart_types%'
+  '%coverart_comment%':
+    'prefix': 'coverart_comment'
+    'body': '%coverart_comment%'
