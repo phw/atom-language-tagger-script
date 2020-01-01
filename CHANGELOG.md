@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.9.0
+* Add snippets for functions / variables new in Picard 2.2
+
 ## 0.8.1
 * Fixed syntax error
 
