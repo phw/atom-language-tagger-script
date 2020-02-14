@@ -7,7 +7,7 @@
     "grammar",
     "musicbrainz"
   ],
-  "repository": "https://github.com/phw/atom-language-tagger-script",
+  "repository": "git@github.com:phw/atom-language-tagger-script.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
