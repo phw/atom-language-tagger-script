@@ -15,12 +15,21 @@
   '$upper(text)':
     'prefix': 'upper'
     'body': '$upper(${1:text})$2'
+  '$reverse(text)':
+    'prefix': 'reverse'
+    'body': '$reverse(${1:text})$2'
   '$left(text,num)':
     'prefix': 'left'
     'body': '$left(${1:text,num})$2'
   '$right(text,num)':
     'prefix': 'right'
     'body': '$right(${1:text,num})$2'
+  '$substr(text,start,end)':
+    'prefix': 'substr'
+    'body': '$substr(${1:text,start,end})$2'
+  '$find(haystack,needle)':
+    'prefix': 'find'
+    'body': '$find(${1:haystack,needle})$2'
   '$matchedtracks()':
     'prefix': 'matchedtracks'
     'body': '$matchedtracks()$1'
@@ -60,6 +69,24 @@
   '$get(name)':
     'prefix': 'get'
     'body': '$get(${1:name})$2'
+  '$getmulti(name,index,separator="; ")':
+    'prefix': 'getmulti'
+    'body': '$getmulti(${1:name,index,separator="; "})$2'
+  '$slice(name,start,end,separator="; ")':
+    'prefix': 'slice'
+    'body': '$slice(${1:name,start,end,separator="; "})$2'
+  '$join(name,text,separator="; ")':
+    'prefix': 'join'
+    'body': '$join(${1:name,text,separator="; "})$2'
+  '$map(name,code,separator="; ")':
+    'prefix': 'map'
+    'body': '$map(${1:name,code,separator="; "})$2'
+  '$foreach(name,code,separator="; ")':
+    'prefix': 'foreach'
+    'body': '$foreach(${1:name,code,separator="; "})$2'
+  '$while(condition,code)':
+    'prefix': 'while'
+    'body': '$while(${1:condition,code})$2'
   '$copy(new,old)':
     'prefix': 'copy'
     'body': '$copy(${1:new,old})$2'
@@ -132,6 +159,9 @@
   '$len(text)':
     'prefix': 'len'
     'body': '$len(${1:text})$2'
+  '$lenmulti(name,separator="; ")':
+    'prefix': 'lenmulti'
+    'body': '$lenmulti(${1:name,separator="; "})$2'
   '$performer(pattern="",join=", ")':
     'prefix': 'performer'
     'body': '$performer()$2'
@@ -165,6 +195,9 @@
   '$is_video()':
     'prefix': 'is_video'
     'body': '$is_video()$1'
+  '$datetime(format=%Y-%m-%d %H:%M:%S)':
+    'prefix': 'datetime'
+    'body': '$datetime(format=%Y-%m-%d %H:%M:%S)$1'
 
   # Metadata variables
   '%album%':
@@ -191,6 +224,9 @@
   '%originalyear%':
     'prefix': 'originalyear'
     'body': '%originalyear%'
+  '%originalfilename%':
+    'prefix': 'originalfilename'
+    'body': '%originalfilename%'
   '%albumartist%':
     'prefix': 'albumartist'
     'body': '%albumartist%'
