@@ -1,5 +1,8 @@
 # Changelog
 
+# 0.10.1
+* Added snippets for special loop variables
+
 # 0.10.0
 * Added snippets for Picard 2.3 scripting additions
 
