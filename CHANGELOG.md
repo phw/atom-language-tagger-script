@@ -1,5 +1,8 @@
 # Changelog
 
+# 0.10.0
+* Added snippets for Picard 2.3 scripting additions
+
 ## 0.9.0
 * Add snippets for functions / variables new in Picard 2.2
 
