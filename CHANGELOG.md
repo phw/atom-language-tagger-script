@@ -2,6 +2,7 @@
 
 # 0.11.0
 * Support for Unicode escape sequences
+* Allow function names starting with _ or 0-9
 
 # 0.10.1
 * Added snippets for special loop variables
