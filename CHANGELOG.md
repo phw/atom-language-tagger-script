@@ -1,5 +1,8 @@
 # Changelog
 
+# 0.11.0
+* Support for Unicode escape sequences
+
 # 0.10.1
 * Added snippets for special loop variables
 
