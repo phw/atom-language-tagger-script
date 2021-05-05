@@ -29,17 +29,17 @@
   }
   {
     'comment': 'Variables'
-    'name': 'variable.tagger_script'
+    'name': 'variable.other.tagger_script'
     'match': '%[_a-zA-Z0-9:]*%'
   }
   {
     'comment': 'Unicode escape sequences'
-    'name': 'keyword.other.tagger_script'
+    'name': 'constant.character.escape.tagger_script'
     'match': '\\\\u[a-fA-F0-9]{4}'
   }
   {
     'comment': 'Escape sequences'
-    'name': 'keyword.other.tagger_script'
+    'name': 'constant.character.escape.tagger_script'
     'match': '\\\\[^u]'
   }
 ]
