@@ -1,10 +1,10 @@
 'name': 'Tagger Script',
-'scopeName': 'source.tagger_script'
-'fileTypes': [ 'taggerscript', 'pts' ]
+'scopeName': 'source.taggerscript'
+'fileTypes': [ 'pts', 'taggerscript' ]
 'patterns': [
   {
     'comment': 'Comments ($noop(...))'
-    'name': 'comment.block.tagger_script'
+    'name': 'comment.block.taggerscript'
     'begin': '\\$noop\\('
     'end': '(?<!\\\\)\\)'
     'patterns': [
@@ -15,12 +15,12 @@
   }
   {
     'comment': 'Functions'
-    'name': 'meta.tagger_script'
+    'name': 'meta.taggerscript'
     'begin': '\\$[_a-zA-Z0-9]*\\('
     'end': '\\)'
     'captures':
       '0':
-        'name': 'support.function.tagger_script'
+        'name': 'support.function.taggerscript'
     'patterns': [
       {
         'include': '$self'
@@ -29,17 +29,17 @@
   }
   {
     'comment': 'Variables'
-    'name': 'variable.other.tagger_script'
+    'name': 'variable.other.taggerscript'
     'match': '%[_a-zA-Z0-9:]*%'
   }
   {
     'comment': 'Unicode escape sequences'
-    'name': 'constant.character.escape.tagger_script'
+    'name': 'constant.character.escape.taggerscript'
     'match': '\\\\u[a-fA-F0-9]{4}'
   }
   {
     'comment': 'Escape sequences'
-    'name': 'constant.character.escape.tagger_script'
+    'name': 'constant.character.escape.taggerscript'
     'match': '\\\\[^u]'
   }
 ]
